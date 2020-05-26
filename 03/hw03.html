@@ -1,0 +1,83 @@
+<!-- hw03.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>여행지 소개</title>
+</head>
+<style>
+  #tour h2 { border-bottom: solid 3px #8f79d2;
+      font-size: 30px;}
+  ul {
+    display:inline-block;
+    list-style-type : none;
+    font-family: "맑은 고딕";}
+  /* 사진 */
+  img { border: 6px double #aa99dd; }
+  /* 장소-도시-나라 */
+  .img {float : left;
+      margin-right: 20px;
+      margin-bottom: 20px;}
+  /* 목록전체 */
+  .place { text-align: center;}
+  /* 장소 */
+  .spot {
+    font-weight : bold;
+    font-size : 1.3em;
+    color: #aa77dd;
+  }
+  .spot:hover{
+    color: white;
+    text-shadow: 1px 2px 3px #732eb8;
+  }
+  /* 도시 */
+  .city { color : #aaaaaa;}
+  /* 나라 */
+  .country { color: #aa99aa; font-weight : bold }
+  /* 인덱스링크 */
+  .A { margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;}
+</style>
+<body>
+  <div id="tour">
+    <h2>여행지 소개</h2>
+    <ul class="place">
+      <div class="img">
+        <li><img src="./img/london.jpg" width="450" height="320" alt="bigben"></li>
+        <li class="spot">빅벤 (Big Ben)</li>
+        <li class="city">런던 (London)</li>
+        <li class="country">영국 (England)</li>
+     </div>
+      <div class="img">
+        <li><img src="./img/paris.jpg" width="450" height="320" alt="Eiffel Tower"></li>
+        <li class="spot">에펠탑 (Eiffel Tower) </li>
+        <li class="city">파리 (Paris)</li>
+         <li class="country">프랑스 (France)</li>
+      </div>
+      <div class="img">      
+        <li><img src="./img/rome.jpg" width="450" height="320" alt="Colosseum"></li>
+        <li class="spot">콜로세움 (Colosseum)</li>
+        <li class="city">로마 (Roma)</li>
+        <li class="country">이탈리아 (Italia)</li>
+      </div>
+      <div class="img">
+        <li><img src="./img/istanbul.jpg" width="450" heigh="320" alt="Sultan Ahmed Mosque"></li>
+        <li class="spot">술탄 아흐메트 모스크 (Sultan Ahmed Mosque)</li>
+        <li class="city">이스탄불 (Istanbul)</li>
+        <li class="country">터키 (Turkey)</li>
+      </div>
+      <div class="img">
+        <li><img src="./img/ny.jpg" width="450" height="320" alt="Brooklyn Bridge"></li>
+        <li class="spot">브루클린교 (Brooklyn Bridge)</li>
+        <li class="city">뉴욕 (New York)</li>
+        <li class="country">미국 (USA)</li>
+      </div>
+    </ul>
+  <div class="A">
+    <a href="../05/HW.html"><i class="fa fa-home" style="font-size:55px;color:#8f79d2;"></i></a>
+  </div>
+  </div>
+</body>
+</html>
