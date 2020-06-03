@@ -3,13 +3,11 @@
 body {
     background: url('../img/back.jpg') no-repeat center fixed;
     background-size: cover;
-    
-}
-#all {
-    width: 1000px;
     margin: 0 auto;
     text-shadow: 3px 4px 5px white;
+    width: 1000px;
 }
+
 /* 제목 */
 h2 {
     margin: 300px;
@@ -32,15 +30,35 @@ h2 {
     
 }
 /* 목록 */
+#nav ul {
+    margin: 0 auto;
+    position : relative;
+}
 #nav li {
     display: inline-block;
 }
 li {
+    display: inline-block;
+    margin: 20px 0px 20px 0px;
     list-style-type:none;
     font-size: 25px;
     color: #ffffff;
-    margin : 0 auto;
-    padding-left:200px;
+}
+#menu_1 {
+    position: absolute;
+    left:150px;
+}
+#menu_2 {
+    position: absolute;
+    left:350px;
+}
+#menu_3 {
+    position: absolute;
+    left:550px;
+}
+#menu_4 {
+    position: absolute;
+    left:750px;
 }
 /* 링크 */
 #nav a {
@@ -55,7 +73,7 @@ li {
 }
 /* 아이콘 */
 i {
-    margin-top: 15px;
+    margin-top: 80px;
     margin-left: 400px;
     text-shadow: none;
 }

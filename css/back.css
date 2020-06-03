@@ -29,14 +29,34 @@ h2 {
     
 }
 /* 목록 */
+#nav ul {
+    margin: 0 auto;
+    position : relative;
+}
 #nav li {
+    margin: 20px 0px 20px 0px;
     display: inline-block;
     list-style-type:none;
     font-size: 25px;
     color: #ffffff;
-    margin : 0 auto;
     text-align: center;
-    padding-left:200px;
+ 
+}
+#menu_1 {
+    position: absolute;
+    left:150px;
+}
+#menu_2 {
+    position: absolute;
+    left:350px;
+}
+#menu_3 {
+    position: absolute;
+    left:550px;
+}
+#menu_4 {
+    position: absolute;
+    left:750px;
 }
 /* 링크 */
 #nav a {
