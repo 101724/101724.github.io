@@ -1,0 +1,95 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+</head>
+<style>
+
+body{
+    font-family:  'Noto Serif', 'Noto Sans KR';
+}
+</style>
+<body>
+    <!-- 메뉴 -->
+    <header>
+        <nav>
+            <ul id="top_menu">
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#profile">profile</a></li>
+                <li><a href="#hw">hw</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 사진들어갈크게차지하는부분 -->
+    <section class="A1" id="portfolio">
+        <div>
+            <h3>인터넷 기초실습</h3>
+        </div>
+    </section>
+    <!-- 프로필 -->
+    <div class="box">
+        <section class="B2" id="profile">
+            <div>
+                <h2>profile </h2>
+                <div class="profile_img">
+                    <img src="img/profile.jpg" alt="profile" width="300" title="sky">
+                </div>
+                <p>컴퓨터소프트웨어공학과</p>
+                <p>1학년 YA반 20200913 최은정</p>
+                <ul class="profile_list">
+                    <li>혼자 있는 시간이 좋다</li>
+                    <li>자연이 좋지만 도시에 살고싶다</li>
+                    <li>마라탕보다는 마라샹궈가 좋다</li>
+                </ul>
+            </div>
+        </section>
+    <!-- home work -->
+        <section class="C3" id="hw">
+            <h2>hw</h2>
+            <div class="hw">
+                <span id="pr">
+                    <i class="far fa-file"></i>
+                    <h3><a href="./hw_ex/hw08.html" target="_blank">수업 실습 예제</a></h3>                    
+                </span>
+                <span id="homew">
+                   <i class="fas fa-archive"></i>
+                    <h3><a href="https://101724.github.io/05/HW.html" target="_blank">과제</a></h3>
+                </span>
+                <span id="test">
+                    <i class="far fa-copy"></i>
+                    <h3><a href="https://101724.github.io/" target="_blank">중간고사 과제</a></h3>
+                </span>
+         </div>
+        </section>
+    </div>
+    <!-- contact -->
+    <section class="D4" id="contact">
+        <h2>contact</h2>
+        <form action="#">
+            <div>
+                <label>name</label>
+                <div class="blank"><input type="name"></div>
+            </div>
+            <div>
+                <label>e-mail</label>
+                <div class="blank"><input type="e-mail" ></div>
+            </div>
+            <div>
+                <label class="message">message</label>
+                <div class="blank"><textarea name="" class="message" style="margin: 0px; width: 570px; height: 150px;"></textarea></div>             
+            </div>
+            <input type="submit" class="button" value="send" class="send">
+        </form>
+    </section>
+    <!-- footer -->
+    <footer>
+        <h5 class="j">copyright(C) 2020 choipositive all rights reserved</h5>
+    </footer>
+</body>
+</html>
