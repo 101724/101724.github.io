@@ -1,33 +1,24 @@
+final/css/portfolio.css
+
+
 /* portfolio.css */
 * { margin:0; padding:0;}
 body {
+    width: 1000px;
     margin: 0 auto;
-    text-align:center;   
+    text-align:center;
 }
-@media screen and (min-width:764px) {
-    #wrapper{
-      max-width:1000px;
-      margin:0 auto;
-      text-align:center;
+@media screen and (max-width:764px){
+    body{
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
     }
 }
 ul { list-style: none;}
-
-@media screen and (min-width:764px) {
-    #top_menu{
-      width: 1000px;
-      height:50px;
-    }
-    
-    #top_menu a{
-        font-size:25px;
-        margin:8px 50px 25px 50px;
-        font-weight:bold;
-    }
-
-}
 #top_menu {
-    
+    width:1000px;
+    height: 50px;
     margin: 10px 0px 20px 0px;
     padding: 0;
     text-align:center;
@@ -38,30 +29,26 @@ ul { list-style: none;}
     border:solid 3px #e4e4e7;
 }
 #top_menu li{
-    display:inline-block;
-    font-size:18px;
-    margin:8px 4px 5px 4px;
+    display: inline-block;
+    margin:8px 50px 25px 50px;
+    font-size: 25px;
 }
-
 #top_menu a{
     color:#294e70;
     font-weight:bold;
-   
 }
 #top_menu a:hover{
     color: white;
     text-shadow: 0px 0px 3px #294e70;
 }
-@media screen and (min-width:764px) {
-    #portfolio{
-        height:600px;
-        width:1000px;
+@media screen and (max-width:764px){
+    #top_menu{
+        width:480px;
+        height:30px;
     }
-    .A1{
-        font-size: 3em;
-        text-shadow:3px 3px 5px	#294e70;
-        height: 600px; 
-        padding-top: 230px;
+    #top_menu li{
+        font-size:18px;
+        margin: 5px 10px;
     }
 }
 .A1 {
@@ -70,49 +57,27 @@ ul { list-style: none;}
     background-size:cover;
     background-position: center;
     filter:opacity(70%);
-
+    width: 100%;
+    height: 600px;
 }
 .A1 h3{
     text-align: center;
     color: white;
-    font-size:2em;
-    text-shadow:3px 3px 5px	#294e70;
-    padding:80px; 
-    text-align:center;
+    font-size: 5em;
+    padding-top: 150px;
+    text-shadow:3px 3px 5px	#294e70; 
 }
-
+@media screen and (max-width:764px){
+    .A1 {
+        width: 100%;
+        height:300px;
+    }
+    .A1 h3{
+        font-size:2em;
+        padding: 80px;
+    }
+}
 /* 프로필 */
-
-@media screen and (min-width:764px) {
-    .box{
-        width: 1000px;
-        -webkit-box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
-        -moz-box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
-        box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
-    }
-    #profile ul{
-        margin: 30px 150px 30px 150px;
-    }
-    .hw{
-        margin-bottom:30px;
-        width:1000px;
-        height: 60px;
-        font-size:1.5em;
-    }
-    #pr{
-        position: relative;
-        left:-150px;
-    }
-    #homew {
-        position: relative;
-        left: 0px;
-    }
-    #test{
-        position: relative;
-        left: 150px;
-    }
-}
-
 .profile_img img{
     margin-top:20px;
     -webkit-border-radius: 100px;
@@ -124,16 +89,19 @@ ul { list-style: none;}
     width: 65%;
 }
 .box {
+    width: 1000px;
     margin-top : 40px; 
     margin-bottom: 40px;
     padding-top : 30px;
     padding-bottom : 30px;
+    -webkit-box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
+    -moz-box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
+    box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
 }
 h2{
-    text-align: center;
     border-bottom: 5px double 	#d0d2dc;
     margin-bottom: 10px;
-    font-size: 2.5em;
+    font-size: 40px;
     font-weight:bold;
     color: #294e70;
 }
@@ -141,12 +109,28 @@ p {
     margin-bottom: 5px;
     font-weight: bold;
     color: 	#294e70;
-    font-size:1.2em;
+    font-size:20px;
 }
 .profile_list{
-    margin: 0px 5px;
+    margin: 30px 150px 30px 150px;
     border: 2px solid	#6a9bc8;
     padding : 15px;
+}
+@media screen and (max-width:764px){
+    .box{
+        width:500px;
+    }
+    h2{
+        font-size:30px;
+    }
+    p{
+        font-size:18px;
+    }
+    .profile_list{
+        font-size:15px;
+        margin: 25px;
+        padding : 10px;
+    }
 }
 /* hw */
 .C3 {
@@ -155,9 +139,11 @@ p {
 h3, .hw{
     display: inline-block;
 }
-.hw h3{
-    margin:30px 10px;
-    font-size: 1.2em;
+.hw {
+    width:1000px;
+    height: 60px;
+    margin:30px 0px;
+    font-size: 22px;
 }
 .hw a {
     color:#6a9bc8;
@@ -171,29 +157,42 @@ h3, .hw{
     text-shadow: 0px 0px 3px #6a9bc8;
     font-size: 80%;
 }
-
-/* form */
-@media screen and (min-width:764px){
-    .D4{
-        width: 1000px;
-        height: 700px;
-        -webkit-box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
-        -moz-box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
-        box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
+#pr{
+    position: relative;
+    left:-180px;
+}
+#homew {
+    position: relative;
+    left: 0px;
+}
+#test{
+    position: relative;
+    left: 180px;
+}
+@media screen and (max-width:764px){
+    .hw{
+        width:500px;
+        font-size:18px;
     }
-    #text textarea{
-        margin: 0px; 
-        width: 570px; 
-        height: 150px;
+    #pr{
+        left:-50px;
+    }
+    #test{
+        left:50px;
     }
 }
+/* form */
 .D4{
+    width: 1000px;
+    height: 700px;
+    -webkit-box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
+    -moz-box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
+    box-shadow: 5px 3px 27px -2px rgba(143,180,214,1);
     padding-top : 30px;
     padding-bottom : 30px;
     margin-top : 40px; 
     margin-bottom: 40px;
 }
-
 .D4 form {
     border : solid 3px #294e70;
     padding : 20px;
@@ -239,7 +238,7 @@ input[type=name], input[type=e-mail], textarea{
     border: 2px solid #d0d2dc;
     font-family:  'Noto Serif', 'Noto Sans KR';
     padding : 5px;
-    background-color:	#d2d3d8;
+    background-color:#f1f2f3;
 }
 input[type=name]:hover, input[type=e-mail]:hover, textarea:hover{
   background-color:white;
@@ -248,11 +247,19 @@ input[type=name]:hover, input[type=e-mail]:hover, textarea:hover{
     text-align:center;
     margin : 15px;
 }
-textarea {
+textarea{
     margin: 0px; 
-    width: 200px; 
-    height: 125px;
+    width: 580px; 
+    height: 150px;
     resize: none;
+}
+@media screen and (max-width:764px){
+    .D4{
+        width:500px;
+    }
+    textarea{
+        width:200px;
+    }
 }
 /* 푸터 */
 .j {
